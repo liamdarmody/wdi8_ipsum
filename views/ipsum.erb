@@ -1,0 +1,27 @@
+<h2>How much WDI8 goodness would you like?</h2>
+
+<form id="ipsum-form" action="#" method="post">
+    Paragraphs: <input id="paragraph_count" style="width: 50px;" type="text" maxlength="2" /><br>
+    Type:
+    <!-- default choice on load -->
+    <input id="default" type="radio" name="choice" value="default" style="display:none" />
+    <!-- straight up -->
+    <div class="rows inline">
+        <input id="straight-up" type="radio" name="choice" value="straight-up" checked /> 
+        <label style="display:inline" for="straight-up">Straight Up</label>
+    </div>
+    <!-- all joel -->
+    <div class="rows">
+        <input id="joel-only" type="radio" name="choice" value="joel-only" />
+        <label for="joel-only">Joel Only</label>
+    </div>
+    <!-- no joel -->
+    <div class="rows">
+        <input id="class-only" type="radio" name="choice" value="class-only" />
+        <label for="class-only">Class Only</label><br>
+    </div>
+    <!-- submit button -->
+    <input class="button button-primary" type="submit" id="submit" value="Submit" />
+</form>
+
+<div id="print-paragraphs"></div>

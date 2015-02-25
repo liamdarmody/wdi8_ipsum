@@ -7,9 +7,27 @@ Link: http://wdi8-ipsum.herokuapp.com/
 
 **Want to contribute to the development of WDI8 Ipsum?**
 
-1. Become a Contributor
-2. The ipsum keywords can be updated within the "words_joel" or "words_class" arrays in the [ipsum.js file](https://github.com/liamdarmody/wdi8_ipsum/blob/master/public/js/ipsum.js)
-3. Commit and push your changes
-4. I'll aim to deploy changes weekly
+First time setup instructions:
+
+1. Please fork this repository. Click the fork button on the top right so you get your own copy on github.
+
+2. Clone your forked repository so you get copy on your computer
+
+`git clone url_of_your_own_copy_of_wdi8_homework_on_github`
+
+3. Add upstream so your local copy's remote is pointing to my repository in github (this repository)
+
+`cd wdi8_homework`  
+
+`git remote add upstream http://github.com/epoch/wdi8_homework`
+
+`git pull upstream master`
+
+How and where to make changes:
+
+- The ipsum keywords can be updated within the "words_joel" or "words_class" arrays in the [ipsum.js file](https://github.com/liamdarmody/wdi8_ipsum/blob/master/public/js/ipsum.js)
+- Commit and Push your changes to your forked repository
+- Create a Pull Request when you'd like your changes merged
+- I'll aim to deploy changes weekly
 
 ***Special thanks to Justin Kestler ([meowist](https://github.com/meowist)) for his [tutorial](http://meowist.github.io/blog/2013/03/10/how-to-create-a-simple-lorem-ipsum-generator-with-javascript-and-jquery/).***

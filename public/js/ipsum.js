@@ -2,12 +2,12 @@
 $(document).ready(function(){
 
 //Start event listener for click
-$("#ipsum-form").submit(function() { 
+$("#ipsum-form").submit(function() {
   var paragraphs = '';
 
-//Determine which of the check boxes is checked 
+//Determine which of the check boxes is checked
   var chosen_button = $("#ipsum-form input[name='choice']:checked").val();
-  
+
 //Grab the paragraph number the user enters
   var paragraph_number = $("#paragraph_count").val();
 
@@ -15,15 +15,15 @@ $("#ipsum-form").submit(function() {
   var words = [];
 
 //Create an array of words to randomize later
-  var words_joel = ["cute", "fuck", "goddamn it", "he's fucking my sister", "Idiots", "butterflies", "craigsy", "jonesy", "warmup", "homework", "brutal", "Matz", "Groucho", "Harpo", "Chico", "MTA", "Happitails", "Ruby", "Sinatra", "Github", "OMDB", "Heroku", "Rails", "CRUD", "Error Driven Development", "awkward", "you'll all be dead to me", "hey underscore"];
-  var words_class = ["WDI", "GA", "Joel", "DT", "Slack", "fuck", "coffee", "pizza", "beer", "happy hour", "GIF", "meme", "meetup", "no sleep", "bean bags", "infinite loop", "luck of the Irish", "I love this class", "I've got so much love to give"];  
+  var words_joel = ["cute", "fuck", "goddamn it", "he's fucking my sister", "Idiots", "butterflies", "craigsy", "jonesy", "warmup", "homework", "brutal", "Matz", "Groucho", "Harpo", "Chico", "MTA", "Happitails", "Ruby", "Sinatra", "Github", "OMDB", "Heroku", "Rails", "CRUD", "Error Driven Development", "awkward", "you'll all be dead to me", "hey underscore", "squeeze his mind-grapes"];
+  var words_class = ["WDI", "GA", "Joel", "DT", "Slack", "fuck", "coffee", "pizza", "beer", "happy hour", "GIF", "meme", "meetup", "no sleep", "bean bags", "infinite loop", "luck of the Irish", "I love this class", "I've got so much love to give"];
   var words_all = words_joel.concat(words_class);
 
 //ELSE IF determines which array of words to show the user
   if (chosen_button == "straight-up") {
    words = words_all;
 } else if (chosen_button == "joel-only") {
-   words = words_joel; 
+   words = words_joel;
 } else {
 words = words_class; }
 
@@ -67,7 +67,7 @@ for ( var x = 0; x < words.length; x++ ) {
   var sentence_capped = capitalizeFirstLetter(sentence);
 //End the first FOR loop that builds sentences from words
           }
-  sentence_group += sentence_capped;  
+  sentence_group += sentence_capped;
 //End the second FOR loop that builds sentence groups from sentences
        }
   paragraphs+='<p>' + sentence_group + '</p>';
@@ -77,11 +77,11 @@ for ( var x = 0; x < words.length; x++ ) {
 $("#print-paragraphs").empty().html(paragraphs);
 
 //Prevent form from actually submitting so page does not reload
-return false; 
+return false;
 
 //End jQuery event listener
   });
 
 //End document ready
 });
- 
+

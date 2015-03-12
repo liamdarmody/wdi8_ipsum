@@ -15,7 +15,7 @@ $("#ipsum-form").submit(function() {
   var words = [];
 
 //Create an array of words to randomize later
-  var words_joel = ["cute", "fuck", "goddamn it", "he's fucking my sister", "Idiots", "butterflies", "craigsy", "jonesy", "warmup", "homework", "brutal", "Matz", "Groucho", "Harpo", "Chico", "MTA", "Happitails", "Ruby", "Sinatra", "Github", "OMDB", "Heroku", "Rails", "CRUD", "Error Driven Development", "awkward", "you'll all be dead to me", "hey underscore", "squeeze his mind-grapes"];
+  var words_joel = ["cute", "fuck", "goddamn it", "he's fucking my sister", "Idiots", "butterflies", "craigsy", "jonesy", "warmup", "homework", "brutal", "Matz", "Groucho", "Harpo", "Chico", "MTA", "Happitails", "Ruby", "Sinatra", "Github", "OMDB", "Heroku", "Rails", "CRUD", "Error Driven Development", "awkward", "you'll all be dead to me", "hey underscore", "squeeze his mind-grapes", "come ooon, Bessie"];
   var words_class = ["WDI", "GA", "Joel", "DT", "Slack", "fuck", "coffee", "pizza", "beer", "happy hour", "GIF", "meme", "meetup", "no sleep", "bean bags", "infinite loop", "luck of the Irish", "I love this class", "I've got so much love to give"];
   var words_all = words_joel.concat(words_class);
 
